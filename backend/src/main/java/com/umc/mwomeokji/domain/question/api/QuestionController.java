@@ -36,5 +36,4 @@ public class QuestionController {
         );
         return ResponseEntity.status(OK).body(questionAndDishes);
     }
-
 }
