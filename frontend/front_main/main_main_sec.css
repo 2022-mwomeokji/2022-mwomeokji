@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    background-color:#FFFEFB;
+    /*
+    font-family: 'NanumSquareAcb';
+    font-family: 'NanumSquareAceb';
+    font-family: 'NanumSquareAcl';
+    font-family: 'NanumSquareAcr';
+    */
+    
+  }
+
+
+.main_main_sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#main_main_sec_logo{
+    height: 180px;
+    width: 200px;
+    margin-top: 148px;
+    
+}
+
+#main_main_sec_logo2{
+    height: 70px;
+    width: 230px;
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#494646;
+    font-family: 'NanumSquareAcb';
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 28px;
+    background-color: rgba(219, 222, 80,0.5);
+    border-radius: 50px;
+    
+}
+
+.main_main_sec_tut{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:58px;
+    font-size: 30.5pt;
+    letter-spacing: 0.3em;
+
+    
+}
+.main_main_sec_tut_box1{
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    height: 136px;
+    width: 1196px;
+    position: relative;
+    z-index: 1;
+    border:1px solid #E9E9E9;
+    
+    /*-webkit-text-stroke: 1.5px #646464;
+    /*text-shadow: 1.5px 0 #646464, 0 -1.5px #646464, -1.5px 0 #646464, 0 1.5px #646464;
+    /*background-color: rgba(251, 237, 86,0.5);*/
+}
+
+.main_main_sec_tut_box2{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 136px;
+    width: 1196px;
+    position: relative;
+    z-index: 2;
+   
+    border:1px solid #E9E9E9;
+    /*-webkit-text-stroke: 1.5px #646464;
+    /*text-shadow: 1.5px 0 #646464, 0 -1.5px #646464, -1.5px 0 #646464, 0 1.5px #646464;
+    /*background-color: rgba(251, 237, 86,0.5);*/
+}
+.main_main_sec_tut_box3{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 136px;
+    width: 1196px;
+    position: relative;
+    z-index: 3;
+    border:1px solid #E9E9E9;
+    
+    /*text-shadow: 1.5px 0 #646464, 0 -1.5px #646464, -1.5px 0 #646464, 0 1.5px #646464;
+    /*background-color: rgba(251, 237, 86,0.5);*/
+}
+.main_main_sec_tut_box4{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 136px;
+    width: 1196px;
+    position: relative;
+    z-index: 4;
+    border:1px solid #E9E9E9;
+    /*-webkit-text-stroke: 1.5px #646464;*/
+    /*text-shadow: 1.5px 0 #646464, 0 -1.5px #646464, -1.5px 0 #646464, 0 1.5px #646464;
+    /*background-color: rgba(251, 237, 86,0.5);*/
+}
+
+
+.main_main_sec_tut_box5{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 136px;
+    width: 1196px;
+    position: relative;
+    z-index: 5;
+    border-top:1px solid #E9E9E9;
+
+}
+
+.main_main_sec_tut_text{
+    position: relative;
+    top: 0px;
+
+    color:#FFFEFB;
+    
+    
+}
+
+.main_main_sec_tut_text3{
+    
+    position: relative;
+    top:71px;
+    color:#FFFEFB;
+    font-weight:700;
+    font-family: 'NanumSquareAceb';
+    font-size: 66.5px;
+    -webkit-text-stroke: 1.5px #646464;
+    
+}
+
+.main_main_sec_tut_text3-2{
+    
+    position: relative;
+    top:65px;
+    left: 14px;
+    color:#FFFEFB;
+    font-weight:700;
+    font-size: 66.5px;
+    -webkit-text-stroke: 1.5px #646464;
+    
+}
+.main_main_sec_tut_text2{
+    
+    position: relative;
+    top:74px;
+    left: -14px;
+    color:#FFFEFB;
+    font-weight:650;
+    font-size: 63px;
+    font-family:'Montserrat', sans-serif;
+    text-shadow: 2px 0 #646464, 0 -2px #646464, -2px 0 #646464, 0 2px #646464;
+    
+}
+
+.main_main_sec_tut_text4{
+    
+    position: relative;
+    top:76px;
+    color:#FFFEFB;
+    font-weight:650;
+    font-size: 63px;
+    font-family:'Montserrat', sans-serif;
+    text-shadow: 2px 0 #646464, 0 -2px #646464, -2px 0 #646464, 0 2px #646464;
+   
+    
+}
+
+
+.main_main_sec_tut_text1:hover{
+    background-color: rgba(251, 237, 86, 0.5);
+    color: #494646;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    
+}
+
+.main_main_sec_tut_box1:hover{
+    
+    background-color: rgba(251, 237, 86, 0.5);
+    box-shadow: 0px 3px 4px 0px gray;
+    z-index: 3;
+}
+
+.main_main_sec_tut_box1:hover>.main_main_sec_tut_text3{
+    color: #494646;
+    background-color: transparent;
+    position: relative;
+    top:31px;
+    -webkit-text-stroke: 0px #646464;
+    
+}
+
+.main_main_sec_tut_box2:hover{
+    
+    background-color: rgba(219, 222, 80, 0.6);
+    box-shadow: 0px 3px 4px 0px gray;
+    z-index: 4;
+}
+
+.main_main_sec_tut_box2:hover>.main_main_sec_tut_text3{
+    color: #494646;
+    background-color: transparent;
+    position: relative;
+    top:31px;
+    -webkit-text-stroke: 0px #646464;
+}
+
+.main_main_sec_tut_box2:hover+.main_main_sec_tut_box1{
+    border-bottom: #FFFEFB;
+}
+
+.main_main_sec_tut_box3:hover{
+    background-color:  rgba(155, 197, 88, 0.6);
+    box-shadow: 0px 3px 4px 0px gray;
+    z-index: 5;
+}
+
+.main_main_sec_tut_box3:hover>.main_main_sec_tut_text3-2{
+    color: #494646;
+    background-color: transparent;
+    position: relative;
+    top:25px;
+    -webkit-text-stroke: 0px #646464;
+}
+
+.main_main_sec_tut_box3:hover>.main_main_sec_tut_text2{
+    color: #494646;
+    background-color: transparent;
+    position: relative;
+    top:30px;
+    text-shadow: 0px 0 #646464, 0 0px #646464, 0px 0 #646464, 0 0px #646464;
+}
+
+.main_main_sec_tut_box4:hover{
+    background-color:  rgba(82, 170, 221, 0.6);
+    box-shadow: 0px 3px 4px 0px gray;
+    z-index: 6;
+}
+
+.main_main_sec_tut_box4:hover>.main_main_sec_tut_text4{
+    color: #494646;
+    background-color: transparent;
+    position: relative;
+    top:29px;
+    text-shadow: 0px 0 #646464, 0 0px #646464, 0px 0 #646464, 0 0px #646464;
+}
+
+
+
+
+
+/* 	rgba(251, 237, 86, 0.5) 노랑
+	rgba(219, 222, 80, 0.6) 연두
+    rgba(155, 197, 88, 0.6) 찐초록
+    rgba(82, 170, 221, 0.6) 파랑
+    rgb(73, 70, 70) 미디움 블랙 */
