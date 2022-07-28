@@ -1,6 +1,6 @@
 package com.umc.mwomeokji.domain.question.domain;
 
-import com.umc.mwomeokji.global.config.entity.BaseEntity;
+import com.umc.mwomeokji.global.entity.BaseEntity;
 import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;

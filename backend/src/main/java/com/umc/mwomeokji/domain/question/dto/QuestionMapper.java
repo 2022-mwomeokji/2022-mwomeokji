@@ -4,10 +4,10 @@ import com.umc.mwomeokji.domain.question.domain.Question;
 import org.mapstruct.Mapper;
 import com.umc.mwomeokji.domain.question.dto.QuestionDto.*;
 
-@Mapper
-public class QuestionMapper {
+@Mapper(componentModel = "spring")
+public interface QuestionMapper {
 
     QuestionsNameResponse toQuestionNameResponse(Question question);
 
-    QuestionAndDishsResponse toQuestionDishsResponse(Question question);
+    QuestionAndDishesResponse toQuestionAndDishesResponse(Question question);
 }

@@ -1,7 +1,6 @@
 package com.umc.mwomeokji.domain.question.api;
 
 import com.umc.mwomeokji.domain.question.application.QuestionService;
-import com.umc.mwomeokji.domain.question.dto.QuestionDto.*;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,9 +20,9 @@ import static org.springframework.http.HttpStatus.OK;
 @RestController
 public class QuestionController {
 
-    @GetMapping
     private final QuestionService questionService;
 
+    @GetMapping
     public ResponseEntity<List<String>> getAllQuestions(){
         List<String> questionList = new ArrayList<>(Stream.of("question1","question2").collect(Collectors.toList()));
         return ResponseEntity.status(OK).body(questionList);
@@ -31,11 +30,11 @@ public class QuestionController {
 
     @GetMapping("/dishes")
     public ResponseEntity<Map<String, List<String>>> getAllQuestionAndDishes(){
-        Map<String, List<String>> questionAndDishs = Map.of(
-                'question1', new ArrayList<>(Stream.of("").collect(Collectors.toList())),
-                'question2', new ArrayList<>(Stream.of("").collect(Collectors.toList()))
+        Map<String, List<String>> questionAndDishes = Map.of(
+                "question1", new ArrayList<>(Stream.of("").collect(Collectors.toList())),
+                "question2", new ArrayList<>(Stream.of("").collect(Collectors.toList()))
         );
-        return ResponseEntity.status(OK).body(quesetionAndDishes);
+        return ResponseEntity.status(OK).body(questionAndDishes);
     }
 
 }

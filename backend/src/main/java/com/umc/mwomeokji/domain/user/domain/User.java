@@ -1,6 +1,6 @@
 package com.umc.mwomeokji.domain.user.domain;
 
-import com.umc.mwomeokji.global.config.entity.BaseEntity;
+import com.umc.mwomeokji.global.entity.BaseEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

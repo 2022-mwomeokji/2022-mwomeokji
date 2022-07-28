@@ -1,4 +1,4 @@
-package com.umc.mwomeokji.global.config.entity;
+package com.umc.mwomeokji.global.entity;
 
 import lombok.Getter;
 import org.springframework.data.annotation.CreatedDate;

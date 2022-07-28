@@ -13,7 +13,7 @@ public class QuestionDto {
 
     @Getter
     @RequiredArgsConstructor
-    public static class QuestionAndDishsResponse {
+    public static class QuestionAndDishesResponse {
         private final String Catogory;
     }
 }
