@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guess</title>
+    <link rel="stylesheet" href="./twenty_guess.css">
+    <script src="./twenty_guess.js"> </script>
+</head>
+
+
+<body>
+    <!--상단 로고 오늘은 뭐먹지-->
+    <main_text>
+            <span class="image" id = "logo_word"float: left; width: 33%;>
+                <img  src=".\img_file\twenty_main_sec_word.svg">
+            </span>
+    </main_text>
+    
+    <!--n번째 질문-->
+    <!--추후 몇번째 질문인지 나오도록 자바 스크립트로 구현예정-->
+    <guess_number>
+        n번째 질문
+    </guess_number>
+
+    <bar>
+        <img  src=".\img_file\twenty_guess_sec_bar.svg">
+    </bar>
+
+    <!--질문 버튼-->
+    <button type="button" class="image" id = "guess_botton" >
+        <img class="botton_hover" src=".\img_file\twenty_guess_noddle.svg" tabindex="1">
+    </button>
+
+    <button type="button" class="image" class="botton_hover" id = "guess_botton">
+        <img class="botton_hover" src=".\img_file\twenty_guess_rice.svg" tabindex="1">
+    </button>
+
+
+    <!--다음, 이전, 다시하기 버튼-->
+    <div class="image">
+        <button type="button" class="image" id = "back_botton" onClick=history.back();>
+            <img  src=".\img_file\twenty_guess_sec_arrow_back.svg">
+        </button>
+
+        <button type="button" class="image" id = "next_botton" onClick="location.href='./twenty_guess.html'";">
+            <img  src=".\img_file\twenty_guess_sec_next.svg">
+        </button>
+
+        <button type="button" class="image" id = "reset_botton" onClick="location.href='./twenty_main.html'";">
+            <img  src=".\img_file\twenty_guess_sec_reset.svg">
+        </button>
+    </div>
+
+
+    </body>
