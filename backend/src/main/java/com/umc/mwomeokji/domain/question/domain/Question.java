@@ -1,30 +1,32 @@
-package com.umc.mwomeokji.domain.user.domain;
+package com.umc.mwomeokji.domain.question.domain;
 
 import com.umc.mwomeokji.global.config.entity.BaseEntity;
+import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
+
 @Getter
-@NoArgsConstructor
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Entity
-public class User extends BaseEntity {
+public class Question extends BaseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(nullable = false)
-    private String name;
+    private String category;
 
     @Column(nullable = false)
-    private String email;
+    private String question;
 
     @Builder
-    public User(String name, String email) {
-        this.name = name;
-        this.email = email;
+    public Question(String category, String question){
+        this.category = category;
+        this.question = question;
     }
 }
