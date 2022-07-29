@@ -4,6 +4,7 @@ import com.umc.mwomeokji.domain.dish.dao.DishRepository;
 import com.umc.mwomeokji.domain.dish.domain.Dish;
 import com.umc.mwomeokji.domain.dish.dto.DishDto;
 import com.umc.mwomeokji.domain.dish.dto.DishMapper;
+import com.umc.mwomeokji.domain.dish.exception.NotFoundDishException;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -19,6 +20,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.mockito.ArgumentMatchers.anyLong;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.BDDMockito.then;
@@ -80,17 +82,15 @@ class DishServiceImplTest {
         then(dishRepository).should(times(1)).findById(anyLong());
     }
 
-    @DisplayName("메뉴 상세 정보 조회 - 실패, 존재하지 않는 id")
+    @DisplayName("메뉴 상세 정보 조회 - 실패, 데이터베이스에 존재하지 않는 잘못된 id 요청")
     @Test
     void get_dish_details_fail() {
         // given
+        given(dishRepository.findById(anyLong())).willReturn(Optional.empty());
 
-
-        // when
-
-
-        // then
-
-
+        // when, then
+        assertThatThrownBy(() -> dishService.getDishDetails(1L))
+                .isInstanceOf(NotFoundDishException.class)
+                .hasMessage("해당하는 id 의 메뉴를 찾을 수 없습니다.");
     }
 }
