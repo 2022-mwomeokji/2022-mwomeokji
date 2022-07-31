@@ -32,15 +32,17 @@ bar{
 
 
 #back_botton{
-    background-color: antiquewhite;
-    margin-top: -100px;   
-    margin-bottom: 100px;
-    border-top: -100px;
+    position: relative;
+    background-color: white;
+    bottom : 10px;
+    right: 20px;
 }
 
 #reset_botton{
-    background-color: antiquewhite;
-    margin-top: 100px;
+    position: relative;
+    background-color: white;
+    bottom: 15px;
+    left: 20px;
 }
 
 #guess_botton{
@@ -52,3 +54,8 @@ bar{
     bottom: 5px;
     right: 12px;
   }
+
+#bottom_button{
+    position: relative;
+    top:60px;
+}
